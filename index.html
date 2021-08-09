@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Proyecto Final</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Mister Zodiac</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signos">Signos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <!-- USO JS : Solicitar al usuario su nombre y año de nacimiento para identificar su SIGNO-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase" id="titulo1">Horoscopo chino</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5" id="textoIntro">Uno de los muchos sistemas adivinatorios asiáticos que coexisten al combinar astrología y numerología.</h2>
+                        <button type="button" class="btn btn-black" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModal" href="#signos" id="boton1">¡Descubre tu signo!</button> 
+                        <!-- Modal de Bootstrap-->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ingresa tus datos y Mister Zodiac te dirá</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="row g-3" id="formularioInicio">
+                                                <div class="col-md-6">
+                                                  <label for="validationDefault01" class="form-label">Nombre</label>
+                                                  <input type="text" class="form-control" id="nombreUsuario">
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <label for="validationDefault02" class="form-label">Año de nacimiento (aaaa)</label>
+                                                  <input type="number" class="form-control" id="yearUsuario">
+                                                </div>
+                                                <div class="col-12">
+                                                  <button class="btn btn-dark" type="submit" value="Enviar" id="botonEnviar">¿Qué signo soy?</button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="modal-footer" id="salidaSigno">
+                                                    </div>
+                                                </div>
+                                              </form>
+                                        </div>
+                                        
+                                     </div>
+                            </div>    
+                        </div>                                          
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+        <!-- Historia-->
+        <section class="about-section text-center" id="historia">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">El calendario astral oriental</h2>
+                        <p class="text-white-50">
+                            A diferencia del horóscopo occidental, donde tu signo depende de la constelación en que está el sol cada día del año, en el horóscopo chino todo depende del año en que naciste por esta razón existen doce signos zodiacales.
+                            Se usa para predecir la Fortuna de las personas.
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/dragon1.png" alt="bannerDragon" />
+            </div>
+        </section>
+        <!-- Cards interactivas-->
+        <section class="projects-section" id="signos">
+            <div class="container px-4 px-lg-5">
+                <!-- Introducción-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left text-white" id="leyenda">
+                            <h4>Leyenda</h4>
+                            <p class="text-50-light text-white mb-0">Existe una leyenda que asegura que Buda mandó llamar ante su presencia a todos los animales de la Tierra, sin embargo, únicamente doce aparecieron ante él. El primero en hacerlo fue la rata, y de acuerdo al orden de su llegada se considera hoy el orden de los signos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- USO JS : Cards de los signos en DOM -->
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="animalCard">
+                </div>
+                <div class="col">
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-dark text-center mt-5 border border-light" id="btnVolver">Mostrar todos</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">¡No te pierdas tu predicción diaria!</h2>
+                        <form class="form-signup d-flex flex-column flex-sm-row">
+                            <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Ingresa tu email..." />
+                            <button class="btn btn-dark" type="submit">Subscríbete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact--> 
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <h2 class="text-white mb-5 mt-5">¿Quieres información personalizada? <br> Contáctanos:</h2>                        
+                </div>
+                <div class="row gx-4 gx-lg-5 mt-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Dirección</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Calle las adivinanzas, Saturno</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">hola@medium.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Teléfono</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+1 (555) 902-Horoscopo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Melissa Zeballos 2021</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js_plantilla/scripts.js"></script>
+        <!-- JQuery-->
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
